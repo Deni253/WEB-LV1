@@ -1,0 +1,77 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+:root{
+    --c1:yellow;
+    --c2:green;
+    --c3:red;
+    --c4:blue;
+    --c5:pink;
+    --c6:gray;
+    --c7:brown;
+    --c8:orange;
+    --c9:purple;
+    --c10:black;
+
+    
+}
+.charts{
+    display: flex;
+    place-content: center;
+    flex-flow: wrap;
+    gap: 2rem;
+}
+
+.pie{
+    flex: 1 0 225px;
+    max-width: 325px;
+    aspect-ratio: 1;
+    animation-name: rotating-pie;
+    animation-duration: 2.5s;
+    border: 1px solid;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--c1) 0% 30%,var(--c2) 30% 55%,var(--c3) 55% 65%,var(--c4) 65% 70%,var(--c5) 70% 75%,var(--c6) 75% 80%,var(--c7) 80% 85%,var(--c8) 85% 90%,var(--c9) 90% 95%,var(--c10) 95% 100%);
+}
+
+@keyframes rotating-pie {
+    0% { transform:rotate(60deg); scale:0;opacity: 0; margin-left:-1000px}
+    100% { transform:rotate(360deg); scale:1;opacity: 1; margin-left:0px}
+}
+
+#s1{
+    background-color: var(--c1);
+}
+#s2{
+    background-color: var(--c2);
+}
+#s3{
+    background-color: var(--c3);
+}
+#s4{
+    background-color: var(--c4);
+}
+#s5{
+    background-color: var(--c5);
+}
+#s6{
+    background-color: var(--c6);
+}
+#s7{
+    background-color: var(--c7);
+}
+#s8{
+    background-color: var(--c8);
+}
+#s9{
+    background-color: var(--c9);
+}
+#s10{
+    color: white;
+    background-color: var(--c10);
+}
+
+
